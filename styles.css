@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f6f8fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button, select {
+    padding: 10px 20px;
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+select {
+    background-color: white;
+    color: #333;
+}
+
+.code-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+pre[class*="language-"] {
+    border-radius: 4px;
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adjust Prism's copy button style */
+div.code-toolbar > .toolbar button {
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    background-color: #f5f2f0;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 0.3em;
+}
+
+/* Custom C# highlighting */
+.language-csharp .token.keyword {
+    color: #569CD6;
+}
+
+.language-csharp .token.string {
+    color: #D69D85;
+}
+
+.language-csharp .token.comment {
+    color: #57A64A;
+}
+
+.language-csharp .token.class-name {
+    color: #4EC9B0;
+}
+
+.language-csharp .token.function {
+    color: #DCDCAA;
+}
+
+.language-csharp .token.number {
+    color: #B5CEA8;
+}
+
+.language-csharp .token.operator {
+    color: #D4D4D4;
+}
+
+/* Custom Python highlighting */
+code[class*="language-python"],
+pre[class*="language-python"] {
+    color: #f8f8f2;
+    background: none;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    text-shadow: none;
+}
+
+.language-python .token.comment,
+.language-python .token.prolog,
+.language-python .token.doctype,
+.language-python .token.cdata {
+    color: #6272A4;
+}
+
+.language-python .token.punctuation {
+    color: #F8F8F2;
+}
+
+.language-python .namespace {
+    opacity: .7;
+}
+
+.language-python .token.property,
+.language-python .token.tag,
+.language-python .token.constant,
+.language-python .token.symbol,
+.language-python .token.deleted {
+    color: #FF79C6;
+}
+
+.language-python .token.boolean,
+.language-python .token.number {
+    color: #BD93F9;
+}
+
+.language-python .token.selector,
+.language-python .token.attr-name,
+.language-python .token.string,
+.language-python .token.char,
+.language-python .token.builtin,
+.language-python .token.inserted {
+    color: #F1FA8C;
+}
+
+.language-python .token.operator,
+.language-python .token.entity,
+.language-python .token.url,
+.language-python .language-css .token.string,
+.language-python .style .token.string,
+.language-python .token.variable {
+    color: #F8F8F2;
+}
+
+.language-python .token.atrule,
+.language-python .token.attr-value,
+.language-python .token.function,
+.language-python .token.class-name {
+    color: #50FA7B;
+}
+
+.language-python .token.keyword {
+    color: #FF79C6;
+}
+
+.language-python .token.regex,
+.language-python .token.important {
+    color: #FFB86C;
+}
+
+.language-python .token.important,
+.language-python .token.bold {
+    font-weight: bold;
+}
+
+.language-python .token.italic {
+    font-style: italic;
+}
+
+.language-python .token.entity {
+    cursor: help;
+}
+
+/* Screenshot button styles */
+#screenshotButton {
+    background-color: #28a745;
+    margin-left: 10px;
+}
+
+#screenshotButton:hover {
+    background-color: #218838;
+}
+
+.code-display-wrapper {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.window-controls {
+    background-color: #323233;
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.window-control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.window-control.close {
+    background-color: #ff5f56;
+}
+
+.window-control.minimize {
+    background-color: #ffbd2e;
+}
+
+.window-control.maximize {
+    background-color: #27c93f;
+}
