@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Create a temporary link element
             const link = document.createElement('a');
-            link.download = 'polacode_screenshot.png';
+            link.download = `${languageSelect.value}-snippet.png`;
             link.href = paddedCanvas.toDataURL();
             
             // Trigger the download
